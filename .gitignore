@@ -42,3 +42,6 @@ yarn.lock
 yarn-error.log
 
 dist-container
+
+# startup script
+*.tar.gz

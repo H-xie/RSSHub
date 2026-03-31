@@ -17,15 +17,22 @@ afterEach(() => {
 describe('access-control', () => {
     it(`access key`, async () => {
         const key = '1L0veRSSHub';
+        const rootCode = md5('/' + key);
         const code = md5('/test/2' + key);
         process.env.ACCESS_KEY = key;
         const app = (await import('@/app')).default;
 
         const response01 = await app.request('/');
-        expect(response01.status).toBe(200);
+        await checkBlock(response01);
 
         const response02 = await app.request('/robots.txt');
         expect(response02.status).toBe(404);
+
+        const response03 = await app.request(`/?key=${key}`);
+        expect(response03.status).toBe(200);
+
+        const response04 = await app.request(`/?code=${rootCode}`);
+        expect(response04.status).toBe(200);
 
         // no key/code
         const response21 = await app.request('/test/2');
