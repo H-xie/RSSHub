@@ -1015,6 +1015,22 @@
   "/eleduck/posts/:id?": [
     "running-grass"
   ],
+  "/everia/": [
+    "KTachibanaM",
+    "AiraNadih"
+  ],
+  "/everia/search/:keyword": [
+    "KTachibanaM",
+    "AiraNadih"
+  ],
+  "/everia/category/:category": [
+    "KTachibanaM",
+    "AiraNadih"
+  ],
+  "/everia/tag/:tag": [
+    "KTachibanaM",
+    "AiraNadih"
+  ],
   "/fantia/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?": [
     "nczitzk"
   ],
@@ -2230,10 +2246,6 @@
   "/19lou/:city?": [
     "nczitzk"
   ],
-  "/1lou/:params{.+}?": [
-    "falling",
-    "nczitzk"
-  ],
   "/1point3acres/user/:id/posts": [
     "Maecenas"
   ],
@@ -2341,6 +2353,9 @@
   ],
   "/91porn/:lang?": [
     "TonyRL"
+  ],
+  "/98zhibo/zuqiujijin": [
+    "chouj"
   ],
   "/99percentinvisible/transcript": [
     "Ji4n1ng"
@@ -4509,22 +4524,6 @@
   "/eventernote/actors/:name/:id": [
     "KTachibanaM"
   ],
-  "/everia/category/:category": [
-    "KTachibanaM",
-    "AiraNadih"
-  ],
-  "/everia/": [
-    "KTachibanaM",
-    "AiraNadih"
-  ],
-  "/everia/search/:keyword": [
-    "KTachibanaM",
-    "AiraNadih"
-  ],
-  "/everia/tag/:tag": [
-    "KTachibanaM",
-    "AiraNadih"
-  ],
   "/expats/czech-news/:category?": [
     "nczitzk"
   ],
@@ -5386,6 +5385,9 @@
   "/ichunqiu/": [
     "8430177"
   ],
+  "/icity/imuseum/:city/:type?": [
+    "chouj"
+  ],
   "/icity/:id": [
     "nczitzk"
   ],
@@ -6063,6 +6065,9 @@
   "/magnumphotos/magazine": [
     "IvanWng97"
   ],
+  "/maldita/updates/:category?": [
+    "canonnizq"
+  ],
   "/manhuagui/comic/:id/:chapterCnt?": [
     "MegrezZhu"
   ],
@@ -6284,6 +6289,9 @@
   ],
   "/naceweb/blog/:sort?": [
     "nczitzk"
+  ],
+  "/namoc/zhanlan": [
+    "magazian"
   ],
   "/nankai/ai/:type?": [
     "LMark"
@@ -9622,6 +9630,13 @@
   "/18comic/search/:option?/:category?/:keyword?/:time?/:order?": [
     "nczitzk",
     "pseudoyu"
+  ],
+  "/1lou/:params{.+}?": [
+    "falling",
+    "nczitzk"
+  ],
+  "/1lou/search/:params": [
+    "JimenezLi"
   ],
   "/36kr/:category/:subCategory?/:keyword?": [
     "nczitzk",

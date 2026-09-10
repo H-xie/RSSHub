@@ -3799,6 +3799,35 @@
       }
     ]
   },
+  "everia.club": {
+    "_name": "EVERIA.CLUB",
+    ".": [
+      {
+        "title": "Latest",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/"
+        ],
+        "target": "/everia/"
+      },
+      {
+        "title": "Images with category",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/category/:category"
+        ],
+        "target": "/everia/category/:category"
+      },
+      {
+        "title": "Images with tag",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/tag/:tag"
+        ],
+        "target": "/everia/tag/:tag"
+      }
+    ]
+  },
   "fantia.jp": {
     "_name": "Fantia",
     ".": [
@@ -7365,19 +7394,6 @@
       }
     ]
   },
-  "1lou.me": {
-    "_name": "BT 之家 1LOU 站",
-    ".": [
-      {
-        "title": "通用",
-        "docs": "https://docs.rsshub.app/routes/multimedia",
-        "source": [
-          "/:params"
-        ],
-        "target": "/1lou(_,url)=>{const parsedUrl=new URL(url);return`/1lou${parsedUrl.href.replace(rootUrl,\"\")}`}"
-      }
-    ]
-  },
   "1point3acres.com": {
     "_name": "一亩三分地",
     "instant": [
@@ -9436,6 +9452,19 @@
           "/index.php"
         ],
         "target": "/91porn/:lang?"
+      }
+    ]
+  },
+  "98zhibo.com": {
+    "_name": "98直播吧",
+    "www": [
+      {
+        "title": "足球集锦",
+        "docs": "https://docs.rsshub.app/routes/sport",
+        "source": [
+          "/zuqiujijin/"
+        ],
+        "target": "/98zhibo/zuqiujijin"
       }
     ]
   },
@@ -21176,35 +21205,6 @@
       }
     ]
   },
-  "everia.club": {
-    "_name": "EVERIA.CLUB",
-    ".": [
-      {
-        "title": "Images with category",
-        "docs": "https://docs.rsshub.app/routes/picture",
-        "source": [
-          "/category/:category"
-        ],
-        "target": "/everia/category/:category"
-      },
-      {
-        "title": "Latest",
-        "docs": "https://docs.rsshub.app/routes/picture",
-        "source": [
-          "/"
-        ],
-        "target": "/everia/"
-      },
-      {
-        "title": "Images with tag",
-        "docs": "https://docs.rsshub.app/routes/picture",
-        "source": [
-          "/tag/:tag"
-        ],
-        "target": "/everia/tag/:tag"
-      }
-    ]
-  },
   "expats.cz": {
     "_name": "Expats.cz",
     "www": [
@@ -25120,6 +25120,19 @@
       }
     ]
   },
+  "icity.ly": {
+    "_name": "iCity",
+    "art": [
+      {
+        "title": "iMuseum 城市展览",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/:city"
+        ],
+        "target": "/icity/imuseum/:city"
+      }
+    ]
+  },
   "idai.ly": {
     "_name": "iDaily",
     ".": [
@@ -27804,6 +27817,19 @@
           "/"
         ],
         "target": "/magnumphotos/magazine"
+      }
+    ]
+  },
+  "maldita.es": {
+    "_name": "Maldita.es",
+    ".": [
+      {
+        "title": "Latest Updates",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:category/"
+        ],
+        "target": "/maldita/updates/:category"
       }
     ]
   },
@@ -30847,6 +30873,19 @@
           "/"
         ],
         "target": "/myfigurecollection/:category?/:language?"
+      }
+    ]
+  },
+  "namoc.cn": {
+    "_name": "National Art Museum of China",
+    "www": [
+      {
+        "title": "Exhibitions",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/namoc/zhanlan/zl_list.shtml"
+        ],
+        "target": "/namoc/zhanlan"
       }
     ]
   },
@@ -44799,6 +44838,27 @@
           "/"
         ],
         "target": "/18comic/:category?/:time?/:order?/:keyword?"
+      }
+    ]
+  },
+  "1lou.me": {
+    "_name": "BT 之家 1LOU 站",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/:params"
+        ],
+        "target": "/1lou(_,url)=>{const parsedUrl=new URL(url);return`/1lou${parsedUrl.href.replace(rootUrl,\"\")}`}"
+      },
+      {
+        "title": "搜索",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/search"
+        ],
+        "target": "/1lou(_,url)=>{const parsedUrl=new URL(url);const searchParams=parsedUrl.searchParams;const query=searchParams.get(\"q\")||parsedUrl.pathname.match(/\\/search-(.+)-\\d+\\.htm/)?.[1]||\"\";return`/1lou/search/${query}`}"
       }
     ]
   },
